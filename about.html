@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gourmet Catering</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navbar Section */
+        .Section1 {    
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            top: 0;
+            z-index: 1000; /* Ensures the navbar stays on top */
+        }
+
+        .log {
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            font-family: monospace;
+            font-size: large;
+        }
+
+        .list {
+            display: flex;
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .list ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .list a {
+            text-decoration: none;
+            color: black;
+            padding: 15px;
+        }
+
+        .list a.active {
+            font-weight: bold;
+        }
+
+        /* Adjust for fixed navbar height */
+        body {
+            padding-top: 60px; /* Adds space for the fixed navbar */
+        }
+
+        /* About Section */
+        .Section3 {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 50px; 
+            margin-top: 30px; /* Adds extra margin below navbar */
+            background-color: #f9f9f9; 
+        }
+
+        .part1 img {
+            width: 500px; 
+            height: auto; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            margin-right: 40px; 
+        }
+
+        .part2 {
+            max-width: 50%; 
+            padding: 10px; 
+        }
+
+        .part2 h3 {
+            font-family: Verdana, sans-serif;
+            text-align: left;
+            margin: 10px 0;
+            font-size: 2rem; 
+            color: #333;
+        }
+
+        .p1 {
+            font-family: monospace;
+            text-align: left;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .p2, .p3 {
+            margin: 10px 0;
+            padding: 10px;
+            font-family: Verdana, sans-serif;
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6; 
+        }
+
+        .p3 {
+            color: gray;
+            margin-bottom: 30px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .Section3 {
+                flex-direction: column; 
+                text-align: center;
+            }
+
+            .part1 img {
+                margin: 0 auto 20px;
+                width: 100%;
+                height: auto;
+            }
+
+            .part2 {
+                max-width: 100%;
+            }
+        }
+
+        /* Footer Section */
+        .Section6 {
+            background-color: lightgray;
+            text-align: center;
+            height: 50px;
+            margin-top: 30px;
+            padding-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="Section1">
+        <div class="log">
+            <p>Welcome to Gourmet Catering Blog</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li> <!-- Active Page -->
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 3: About Catering Details -->
+    <div id="about-catering" class="Section3">
+        <div class="part1">
+            <img src="img4.jpg" alt="About Catering Image">
+        </div>
+        <div class="part2">
+            <h3>About Catering </h3>
+            <p class="p1">Tradition since 1889</p>
+            <p class="p2">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+            <p class="p3">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="Section6">
+        &copy; All Rights Reserved
+    </footer>
+</body>
+</html>

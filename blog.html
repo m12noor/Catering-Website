@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Gourmet Catering</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset margins and paddings for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+.Section1 {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure header stays on top */
+}
+
+.log {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    float: left;
+    font-family: monospace;
+    font-size: large;
+}
+
+.list {
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    float: right;
+}
+
+.list ul {
+    list-style-type: none;
+    display: flex;
+    margin: 5px;
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+
+/* Blog Section */
+.Section5 {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 90%;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.Section5 h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.post:hover {
+    transform: translateY(-10px);
+}
+
+.blog-img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.post h4 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333; 
+}
+
+.post p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #ff6347;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.read-more:hover {
+    color: #d9534f;
+}
+
+.Section6 {
+    background-color: lightgray;
+    text-align: center;
+    height: 50px;
+    margin-top: 10px;
+    padding-top: 25px;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div class="Section1">
+        <div class="log">
+            <p>Welcome to Gourmet Catering Blog</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div  class="Section5">
+        <h3>Our Blog</h3>
+        <div class="blog-posts">
+            <div class="post">
+                <img src="img.webp" alt="Catering Event" class="blog-img">
+                <h4>Behind the Scenes of a Successful Catering Event</h4>
+                <p>Ever wondered what goes into planning a perfect catering event? Learn more...</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="post">
+                <img src="img7.jfif" alt="Event Trends" class="blog-img">
+                <h4>Top 10 Catering Trends for 2024</h4>
+                <p>Stay ahead of the curve with exciting new trends in the catering industry...</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="post">
+                <img src="img9.jfif" alt="Sustainable Catering" class="blog-img">
+                <h4>Why Sustainable Catering Matters</h4>
+                <p>Discover how we use locally sourced ingredients for a more sustainable future...</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="post">
+                <img src="img6.jfif" alt="Gourmet Recipes" class="blog-img">
+                <h4>Gourmet Recipes to Try at Home</h4>
+                <p>Explore delicious gourmet recipes that you can easily recreate at home...</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="Section6">&copy; All Rights Reserved</footer>
+</body>
+</html>
